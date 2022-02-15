@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.scan.ScanFragment">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/header_bg"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:elevation="50dp"
+        app:cardElevation="0dp"
+        app:cardBackgroundColor="@color/blue"
+        android:background="@drawable/top_nav_style"
+        android:layout_marginTop="-15dp"
+        app:cardCornerRadius="15dp">
+
+        <TextView
+            android:layout_width="400dp"
+            android:layout_height="wrap_content"
+            android:text="Check-in"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_horizontal"
+            android:fontFamily="@font/oxygen_bold"
+            android:textColor="@color/White"
+            android:layout_marginTop="40dp"
+            android:textSize="40sp"/>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="100dp"
+        app:cardBackgroundColor="@color/grey"
+        app:cardCornerRadius="15dp"
+        android:layout_marginBottom="-15dp"
+        app:cardElevation="5dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/ScanCard1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_centerHorizontal="true"
+                app:cardBackgroundColor="@color/darkblue"
+                app:cardCornerRadius="15dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="Guides on How to Check-in"
+                        android:gravity="center"
+
+                        android:textColor="@color/white"
+                        android:layout_margin="10dp"
+                        android:textStyle="bold"
+                        android:textSize="23sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:lineSpacingMultiplier="1.2"
+                        android:text="1. Press the 'Check-in' button below."
+                        android:textColor="@color/white"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text=" 2. Hold your device over a QR Code so that it’s clearly visible within your smartphone’s screen."
+                        android:textColor="@color/white"
+                        android:lineSpacingMultiplier="1.2"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:textSize="16sp"  />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="Two things can happen when you correctly hold your smartphone over a QR Code."
+                        android:textColor="@color/white"
+                        android:lineSpacingMultiplier="1.2"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:textSize="16sp"  />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text=" 2.1 The phone automatically scans the code."
+                        android:textColor="@color/white"
+                        android:lineSpacingMultiplier="1.2"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:textSize="16sp"  />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text=" 2.2 You may need to move your phone around the QR code marker in order to get it scanned. "
+                        android:textColor="@color/white"
+                        android:lineSpacingMultiplier="1.2"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:textSize="16sp"  />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text=" 3. Presto! You have successfully check-in and the check-in details will be displayed."
+                        android:textColor="@color/white"
+                        android:lineSpacingMultiplier="1.2"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:textSize="16sp"  />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text=" 4. Normally, the scanning process doesn’t happen instantly. It may take a few seconds on most devices."
+                        android:textColor="@color/white"
+                        android:lineSpacingMultiplier="1.2"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:textSize="16sp"  />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <Button
+                android:id="@+id/button_checkin"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_below="@+id/ScanCard1"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/radius"
+                android:elevation="50dp"
+                android:shadowColor="@color/black"
+                android:text="Check-in"
+                android:textColor="@color/White"
+                android:textFontWeight="700"
+                android:textSize="17sp"
+                app:backgroundTint="@color/blue" />
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</FrameLayout>

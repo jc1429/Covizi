@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.covizi.CheckOutInfo">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context="com.example.covizi.CheckOutInfo"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/header_bg"
+            android:layout_width="match_parent"
+            android:layout_marginTop="-15dp"
+            android:layout_height="wrap_content"
+            android:elevation="50dp"
+            app:cardElevation="0dp"
+            app:cardBackgroundColor="@color/blue"
+            app:cardCornerRadius="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/check_out_details"
+                android:onClick="back"
+                android:gravity="center_horizontal"
+                android:fontFamily="@font/oxygen_bold"
+                android:textColor="@color/White"
+                android:layout_marginTop="40dp"
+                android:layout_marginStart="100dp"
+                android:layout_marginBottom="30dp"
+                android:textSize="30sp"/>
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/back_btn"
+                android:layout_marginStart="30dp"
+                android:layout_gravity="left"
+                android:layout_marginTop="45dp"
+                tools:ignore="RtlHardcoded" />
+        </androidx.cardview.widget.CardView>
+
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/grey_bg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="@color/light_purple"
+            android:layout_margin="12dp"
+            app:cardCornerRadius="15dp">
+
+            <ImageView
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:background="@drawable/app_icon"
+                android:layout_marginTop="215dp"
+                android:layout_marginLeft="30dp"
+
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:background="@drawable/img_logo_circle"
+                    android:layout_gravity="center"
+                    android:layout_margin="10dp" />
+
+
+                <TextView
+                    android:id="@+id/digitalCertTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/thank_you"
+                    android:layout_gravity="center"
+                    android:textColor="@color/white"
+                    android:layout_marginStart="80dp"
+                    android:layout_marginEnd="10dp"
+                    android:textStyle="bold"
+                    android:textSize="30sp" />
+
+
+                <TextView
+                    android:id="@+id/digitalCertTitleDetails"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/check_in_successfully"
+                    android:layout_gravity="center"
+                    android:textColor="@color/white"
+                    android:layout_marginStart="80dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:textSize="20sp" />
+
+
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/vaccineCard1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    app:cardBackgroundColor="@color/darkblue"
+                    app:cardCornerRadius="15dp">
+
+                    <ImageView
+                        android:id="@+id/imgCheckInProfile"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:background="@drawable/img_check_in_location_circle"
+                        android:layout_marginTop="60dp"
+                        android:layout_marginStart="13dp"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/checkOutTitle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAlignment="center"
+                            android:text="@string/check_out_information"
+                            android:textColor="@color/white"
+                            android:layout_margin="10dp"
+                            android:textStyle="bold"
+                            android:textSize="20sp" />
+
+                        <TextView
+                            android:id="@+id/checkInLocation"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:text="@string/location_xiamen_university_malaysia"
+                            android:textColor="@color/white"
+                            android:layout_marginLeft="100dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:textSize="16sp"
+                            tools:ignore="RtlHardcoded" />
+
+                        <TextView
+                            android:id="@+id/checkInUsername"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginStart="100dp"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:text="Name: Loo Tong Yee"
+                            android:textColor="@color/white"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/checkInPhoneNum"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:text="Phone Number: 012-3456789"
+                            android:textColor="@color/white"
+                            android:layout_marginStart="100dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:textSize="16sp"
+                            tools:ignore="RtlHardcoded" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/checkInDate"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:text="Date: Sep 22, 2021"
+                                android:textColor="@color/white"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginStart="100dp"
+                                android:layout_marginEnd="10dp"
+                                android:layout_marginBottom="10dp"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:id="@+id/checkInTime"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:text="Time: 12:36:59 PM"
+                                android:textColor="@color/white"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginBottom="10dp"
+                                android:textSize="16sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginStart="10dp"
+                            android:orientation="horizontal">
+
+                            <androidx.cardview.widget.CardView
+                                android:id="@+id/covidRiskStatus_bg"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="10dp"
+                                android:layout_marginBottom="10dp"
+                                app:cardBackgroundColor="@color/covidRiskStatusLow"
+                                app:cardCornerRadius="15dp">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:id="@+id/txt_covid"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:textAlignment="center"
+                                        android:text="@string/health_risk"
+                                        android:textColor="@color/white"
+                                        android:layout_marginTop="8dp"
+                                        android:paddingLeft="20dp"
+                                        android:paddingRight="20dp"
+                                        android:textSize="15sp" />
+
+                                    <TextView
+                                        android:id="@+id/txt_covidStatus"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:textAlignment="center"
+                                        android:textColor="@color/white"
+                                        android:paddingLeft="10dp"
+                                        android:paddingRight="10dp"
+                                        android:paddingBottom="10dp"
+                                        android:text="@string/low"
+                                        android:textStyle="bold"
+                                        android:textSize="15sp"/>
+
+                                </LinearLayout>
+                            </androidx.cardview.widget.CardView>
+
+                            <androidx.cardview.widget.CardView
+                                android:id="@+id/vaccinationStatus_bg"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="10dp"
+                                android:layout_marginBottom="10dp"
+                                app:cardBackgroundColor="@color/covidVaccineStatus1"
+                                app:cardCornerRadius="15dp">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:id="@+id/txt_vaccination"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:textAlignment="center"
+                                        android:text="@string/vaccination_status"
+                                        android:textColor="@color/white"
+                                        android:layout_marginTop="8dp"
+                                        android:textSize="15sp" />
+
+                                    <TextView
+                                        android:id="@+id/txt_vaccinationStatus"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:textAlignment="center"
+                                        android:paddingLeft="10dp"
+                                        android:paddingRight="10dp"
+                                        android:paddingBottom="10dp"
+                                        android:textColor="@color/white"
+                                        android:text="@string/partially_vaccinated"
+                                        android:textStyle="bold"
+                                        android:textSize="15sp"/>
+
+                                </LinearLayout>
+                            </androidx.cardview.widget.CardView>
+                        </LinearLayout>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAlignment="center"
+                            android:layout_gravity="center"
+                            android:text="@string/checkInOutHint"
+                            android:textColor="@color/white"
+                            android:textSize="13sp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="10dp"
+                            android:textStyle="bold"/>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,118 @@
+<resources>
+    <string name="app_name">Covizi</string>
+    <string name="title_home">Home</string>
+    <string name="title_scan">Scan</string>
+    <string name="title_stats">Statistics</string>
+    <string name="title_profile">Profile</string>
+
+    <string name="history_hint">Check-out details will be displayed here. If you have not checked out, you may click on a past check-in to check out accordingly.</string>
+    <string name="digital_cert_title">  Digital Certificate for COVID-19 Vaccination</string>
+    <string name="dose1Date">  Date: 6 January 2022 09:00 AM</string>
+    <string name="manufacturer">  Manufacturer:  CoronaVac Suspension for Injection SARS-CoV-2 Vaccine (Vero Cell), Inactivated</string>
+    <string name="checkInOutHint">Kindly show this ticket to the owner of the premises once bring requested.</string>
+    <string name="consent_1"> I confirm I have received and understood information provided to me on COVID-19 vaccination</string>
+    <string name="consent_2"> I confirm that none of the conditions above apply, or I have discussed these and/or any other special circumstances with my regular health care provider and/or vaccination service provider.</string>
+    <string name="consent_3"> I agree to receive a course of COVID-19 vaccine (two doses of the same vaccine)</string>
+
+    <string name="login_to_your_account">Login to Your Account</string>
+    <string name="ic_no">IC No.</string>
+    <string name="password">Password</string>
+    <string name="sign_in">Sign in</string>
+    <string name="don_t_have_an_account_sign_up">Don\'t have an account? Sign Up!</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="you_are_almost_there">You are Almost There !</string>
+    <string name="next">Next</string>
+    <string name="healthDec_Q3">3. Have you been in ‘close contact with person suspected to have COVID-19 ?</string>
+    <string name="healthDec_Q2">2. Have you tested positive for COVID-19 in the past 10 days ?</string>
+    <string name="healthDec_Q4">4. Have you travelled or resided in any country outside Malaysia in the last 14 days ?</string>
+    <string name="submit">Submit</string>
+    <string name="healthDec_Title">Health Details</string>
+    <string name="healthDec_Q1">1. Do you experience any symptoms below over the past 14 days?</string>
+    <string name="healthDec_Q1_a">a. Fever or Chills</string>
+    <string name="healthDec_Q1_b">b. Cough</string>
+    <string name="healthDec_Q1_c">c. Shortness of breath or difficulty breathing</string>
+    <string name="healthDec_Q1_d">d. Fatigue</string>
+    <string name="healthDec_Q1_e">e. Muscle or body aches</string>
+    <string name="healthDec_Q1_f">f. New loss of taste or smell</string>
+    <string name="healthDec_Q1_g">g. Nausea or Vomiting</string>
+    <string name="personal_details">• Personal Details</string>
+    <string name="health_details">• Health Details</string>
+    <string name="vaccination_details">• Vaccination Details</string>
+    <string name="health_declaration_title">Health Declaration</string>
+    <string name="let_us_know_about_you">Let Us Know About You</string>
+    <string name="name">Name</string>
+    <string name="ic_number">IC Number</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="vaccination_booking">Vaccination Booking</string>
+    <string name="vb_hd_Q3">3. Have you been told that you are suspected to have COVID-19 by alicensed healthcare provider in the past 10 days?</string>
+    <string name="vaccination_details_title">Vaccination Details</string>
+    <string name="vb_vd_Q1">1. Which type of Vaccine do you prefer ?</string>
+    <string name="vb_vd_Q2_details">(This would include a severe allergic reaction [e.g., anaphylaxis] that required treatment with epinephrine or EpiPen® or that caused you to go to the hospital. It would also include an allergic reaction that caused hives, swelling, or respiratory distress, including wheezing.)</string>
+    <string name="vb_vd_Q2">2. Have you ever had an allergic reaction to:</string>
+    <string name="vb_vd_Q2A">A component of a COVID-19 vaccine, including either of the following: \n• Polyethylene glycol (PEG), which is found in some medications, such as laxatives and preparations for colonoscopy procedure</string>
+    <string name="vb_vd_Q2b">• Polysorbate, which is found in some vaccines, film coated tablets, and intravenous steroids</string>
+    <string name="vb_vd_Q2C">• A previous dose of COVID-19 vaccine</string>
+    <string name="thank_you_for_your_response">Thank You For Your Response !</string>
+    <string name="make_a_report">Make A Report</string>
+    <string name="mr_Q2">2. Incident/Report Location:</string>
+    <string name="mr_Q3">3. Incident/Report Details:</string>
+    <string name="mr_Q1">1. What action that the person does not obey ?</string>
+    <string name="check_out_details">Check-out Details</string>
+    <string name="check_out_information">Check-out Information</string>
+    <string name="check_in_details">Check-in Details</string>
+    <string name="thank_you">Thank You</string>
+    <string name="check_in_successfully">Check-in Successfully</string>
+    <string name="check_in_information">Check-in Information</string>
+    <string name="location_xiamen_university_malaysia">Location : Xiamen University Malaysia</string>
+    <string name="health_risk">Health Risk</string>
+    <string name="low">Low</string>
+    <string name="vaccination_status">Vaccination Status</string>
+    <string name="partially_vaccinated">Partially Vaccinated</string>
+    <string name="history">History</string>
+    <string name="view_digital_cert"> <u>• View your Digital Certificate Here</u>.</string>
+    <string name="digital_certificate">Digital Certificate</string>
+    <string name="vaccination_consent_title">Consent to Get Vaccination</string>
+    <string name="vaccination_consent_Q1a">a. Do you have any serious allergies, particularly anaphylaxis, to anything, or carry or have been prescribed an adrenaline autoinjector (EpiPen)?</string>
+    <string name="vaccination_consent_Q1b">b. Have you had an allergic reaction after being vaccinated before?</string>
+    <string name="vaccination_consent_Q1c">c. Have you had COVID-19 before?</string>
+    <string name="vaccination_consent_Q1d">d. Do you have a bleeding disorder?</string>
+    <string name="vaccination_consent_Q1e">e. Do you take any medicine to thin your blood (an anticoagulant therapy)?</string>
+    <string name="vaccination_consent_Q1f">f. Do you have a weakened immune system (immunocompromised)?</string>
+    <string name="vaccination_consent_Q1g">g. Are you pregnant (having a baby) or think you might be pregnant?</string>
+    <string name="vaccination_consent_Q1h">h. Are you planning to get pregnant?</string>
+    <string name="vaccination_consent_Q1i">i. Are you breastfeeding?</string>
+    <string name="vaccination_consent_Q1j">j. Have you been sick with a cough, sore throat, fever or are feeling sick in another way?</string>
+    <string name="vaccination_consent_Q1k">k. Have you had a COVID-19 vaccination before?</string>
+    <string name="vaccination_consent_Q1l">l. Have received any other vaccination in the last 14 days?</string>
+    <string name="vaccination_consent_Q1m">Consent to Receive COVID-19 Vaccine</string>
+    <string name="phone_number_e_g_0123456789">Phone Number e.g. 0123456789</string>
+    <string name="covizi">COVizi</string>
+    <string name="register_for_vaccination">• <b><u>Register for Vaccination</u></b></string>
+    <string name="completed_your_health_declaration_now">• <b><u>Completed Your Health Declaration now</u></b></string>
+    <string name="textStatsToday">Today :</string>
+    <string name="not_vaccinated">Not Vaccinated</string>
+
+    <string-array name="spinner_Ans">
+        <item>Please Select Your Answer</item>
+        <item>Yes</item>
+        <item>No</item>
+    </string-array>
+
+    <string-array name="spinner_Ans_Report">
+        <item>Please Select Your Answer</item>
+        <item>Do not wear Mask</item>
+        <item>Not having proper social distancing</item>
+        <item>Spreading fake news</item>
+        <item>Other</item>
+    </string-array>
+    <string-array name="Vaccine_Type">
+        <item>Please Select Your Answer</item>
+        <item>AstraZeneca</item>
+        <item>Pfizer</item>
+        <item>Sinovac</item>
+        <item>Sinopharm</item>
+    </string-array>
+
+
+</resources>

@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".HotspotActivity">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/header_bg"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:elevation="50dp"
+        app:cardElevation="0dp"
+        app:cardBackgroundColor="@color/blue"
+        android:background="@drawable/top_nav_style"
+        android:layout_marginTop="-7dp"
+        app:cardCornerRadius="7dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/hotspot"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Hotspot"
+                android:gravity="center_horizontal"
+                android:fontFamily="@font/oxygen_bold"
+                android:textColor="@color/White"
+                android:layout_marginTop="20dp"
+                android:textSize="40sp"/>
+
+            <ImageView
+                android:id="@+id/hotspot_backbtn"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="left"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="32dp"
+                android:src="@drawable/back_btn" />
+
+            <TextView
+                android:id="@+id/track"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/hotspot"
+                android:layout_marginStart="90dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="30dp"
+                android:fontFamily="@font/oxygen_bold"
+                android:gravity="center"
+                android:text="Track COVID-19 Hotspot"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/place"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="120dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="60dp"
+                app:boxBackgroundColor="@color/white"
+                app:boxCornerRadiusTopStart="10dp"
+                app:boxCornerRadiusTopEnd="10dp"
+                app:boxCornerRadiusBottomStart="10dp"
+                app:boxCornerRadiusBottomEnd="10dp"
+                android:hint="Search here...">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/places"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <ImageView
+                android:id="@+id/search_location"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="130dp"
+                android:layout_marginEnd="10dp"
+                android:src="@drawable/ic_baseline_search_24" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginBottom="30dp"
+        android:layout_marginTop="5dp"
+        app:cardBackgroundColor="@color/grey"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="5dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <fragment
+                android:id="@+id/googleMap"
+                class="com.google.android.gms.maps.SupportMapFragment"
+                android:layout_width="match_parent"
+                android:layout_height="320dp" />
+
+            <TextView
+                android:id="@+id/note"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/googleMap"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:fontFamily="@font/oxygen"
+                android:text="Note: You can type location through search bar and search by clicking on search icon. To locate yourself, click locate icon on the map"
+                android:textSize="13sp" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/warn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/note"
+                app:contentPadding="10dp"
+                android:layout_marginHorizontal="15dp"
+                app:cardBackgroundColor="@color/title_color"
+                app:cardCornerRadius="25dp"
+                app:cardElevation="5dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/warning"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/warning"/>
+
+                    <TextView
+                        android:id="@+id/txt_covidcases_near"
+                        android:layout_toRightOf="@id/warning"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        android:fontFamily="@font/oxygen"
+                        android:text="Hi Loo, there have been 10 reported case(s) of COVID-19 within a 1km radius from your current location in the last 14 days."
+                        />
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/risk_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/warn"
+                android:layout_marginStart="37dp"
+                android:layout_marginTop="5dp"
+                android:text="The location is within  "
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/risk_level"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/warn"
+                android:layout_marginTop="6dp"
+                android:layout_toRightOf="@id/risk_description"
+                android:fontFamily="@font/oxygen_bold"
+                android:text="Red Zone."
+                android:textColor="@color/black" />
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

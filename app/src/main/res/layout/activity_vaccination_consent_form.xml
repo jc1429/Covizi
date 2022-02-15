@@ -1,0 +1,561 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.covizi.VaccinationConsentForm">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context="com.example.covizi.HealthDeclarationStep2"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/header_bg"
+            android:layout_width="match_parent"
+            android:layout_marginTop="-15dp"
+            android:layout_height="220dp"
+            android:elevation="50dp"
+            app:cardElevation="0dp"
+            app:cardBackgroundColor="@color/blue"
+            app:cardCornerRadius="15dp">
+
+            <TextView
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:text="Vaccination Consent Form"
+                android:gravity="center_horizontal"
+                android:fontFamily="@font/oxygen_bold"
+                android:textColor="@color/White"
+                android:layout_marginTop="30dp"
+                android:layout_marginStart="30dp"
+                android:textSize="30sp"/>
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/back_btn"
+                android:layout_marginStart="10dp"
+                android:layout_gravity="left"
+                android:onClick="back"
+                android:layout_marginTop="50dp"
+                tools:ignore="RtlHardcoded" />
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="100dp"
+            android:layout_marginBottom="15dp"
+            app:cardBackgroundColor="@color/grey"
+            app:cardCornerRadius="15dp"
+            app:cardElevation="5dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/title_vaccinationConsentForm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="@font/oxygen_bold"
+                    android:text="@string/vaccination_consent_title"
+                    android:textColor="@color/blue"
+                    android:textSize="26sp" />
+
+                <TextView
+                    android:id="@+id/vaccination_Q1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/title_vaccinationConsentForm"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="25dp"
+                    android:fontFamily="@font/oxygen_bold"
+                    android:lineSpacingMultiplier="1.2"
+                    android:text="@string/healthDec_Q1"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/vaccination_Q1_A"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/vaccination_Q1"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="@font/oxygen_bold"
+                    android:lineSpacingMultiplier="1.2"
+                    android:text="@string/vaccination_consent_Q1a"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:background="#FFFFFF"
+                    android:layout_below="@id/vaccination_Q1_A"
+                    android:id="@+id/R1"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginBottom="15dp">
+                    <Spinner
+                        android:id="@+id/spinnerQ1A_Ans"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="5dp"/>
+                </RelativeLayout>
+
+
+                <TextView
+                    android:id="@+id/vaccination_Q1_B"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/R1"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/oxygen_bold"
+                    android:text="@string/vaccination_consent_Q1b"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:background="#FFFFFF"
+                    android:layout_below="@id/vaccination_Q1_B"
+                    android:id="@+id/R2"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginBottom="15dp">
+                    <Spinner
+                        android:id="@+id/spinnerQ1B_Ans"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="5dp"
+                        />
+                </RelativeLayout>
+
+
+
+                <TextView
+                    android:id="@+id/vaccination_Q1_C"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/R2"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/oxygen_bold"
+                    android:text="@string/vaccination_consent_Q1c"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:background="#FFFFFF"
+                    android:layout_below="@id/vaccination_Q1_C"
+                    android:id="@+id/R3"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginBottom="15dp">
+                    <Spinner
+                        android:id="@+id/spinnerQ1C_Ans"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="5dp"
+                        />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/vaccination_Q1_D"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/R3"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/oxygen_bold"
+                    android:text="@string/vaccination_consent_Q1d"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:background="#FFFFFF"
+                    android:layout_below="@id/vaccination_Q1_D"
+                    android:id="@+id/R4"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginBottom="15dp">
+
+                    <Spinner
+                        android:id="@+id/spinnerQ1D_Ans"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="5dp" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/vaccination_Q1_E"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/R4"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/oxygen_bold"
+                    android:text="@string/vaccination_consent_Q1e"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:background="#FFFFFF"
+                    android:layout_below="@id/vaccination_Q1_E"
+                    android:id="@+id/R5"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginBottom="15dp">
+                    <Spinner
+                        android:id="@+id/spinnerQ1E_Ans"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="5dp"
+                        />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/vaccination_Q1_F"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/R5"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/oxygen_bold"
+                    android:text="@string/vaccination_consent_Q1f"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:background="#FFFFFF"
+                    android:layout_below="@id/vaccination_Q1_F"
+                    android:id="@+id/R6"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginBottom="15dp">
+                    <Spinner
+                        android:id="@+id/spinnerQ1F_Ans"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="5dp"
+                        />
+                </RelativeLayout>
+
+
+                <TextView
+                    android:id="@+id/vaccination_Q1_G"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/R6"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/oxygen_bold"
+                    android:text="@string/vaccination_consent_Q1g"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:background="#FFFFFF"
+                    android:layout_below="@id/vaccination_Q1_G"
+                    android:id="@+id/R7"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginBottom="15dp">
+                    <Spinner
+                        android:id="@+id/spinnerQ1G_Ans"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="5dp"
+                        />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/vaccination_Q1_H"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/R7"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/oxygen_bold"
+                    android:lineSpacingMultiplier="1.2"
+                    android:text="@string/vaccination_consent_Q1h"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:background="#FFFFFF"
+                    android:layout_below="@id/vaccination_Q1_H"
+                    android:id="@+id/R8"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginBottom="15dp">
+                    <Spinner
+                        android:id="@+id/spinnerQ1H_Ans"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="5dp"
+                        />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/vaccination_Q1_I"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/R8"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/oxygen_bold"
+                    android:lineSpacingMultiplier="1.2"
+                    android:text="@string/vaccination_consent_Q1i"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:background="#FFFFFF"
+                    android:layout_below="@id/vaccination_Q1_I"
+                    android:id="@+id/R9"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginBottom="15dp">
+                    <Spinner
+                        android:id="@+id/spinnerQ1I_Ans"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="5dp"
+                        />
+                </RelativeLayout>
+
+
+                <TextView
+                    android:id="@+id/vaccination_Q1_J"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/R9"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/oxygen_bold"
+                    android:lineSpacingMultiplier="1.2"
+                    android:text="@string/vaccination_consent_Q1j"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:background="#FFFFFF"
+                    android:layout_below="@id/vaccination_Q1_J"
+                    android:id="@+id/R10"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginBottom="15dp">
+                    <Spinner
+                        android:id="@+id/spinnerQ1J_Ans"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="5dp"
+                        />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/vaccination_Q1_K"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/R10"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/oxygen_bold"
+                    android:lineSpacingMultiplier="1.2"
+                    android:text="@string/vaccination_consent_Q1k"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:background="#FFFFFF"
+                    android:layout_below="@id/vaccination_Q1_K"
+                    android:id="@+id/R11"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginBottom="15dp">
+                    <Spinner
+                        android:id="@+id/spinnerQ1K_Ans"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="5dp"
+                        />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/vaccination_Q1_L"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/R11"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/oxygen_bold"
+                    android:lineSpacingMultiplier="1.2"
+                    android:text="@string/vaccination_consent_Q1l"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:background="#FFFFFF"
+                    android:layout_below="@id/vaccination_Q1_L"
+                    android:id="@+id/R12"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginBottom="15dp">
+                    <Spinner
+                        android:id="@+id/spinnerQ1L_Ans"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="5dp"
+                        />
+                </RelativeLayout>
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/vaccineConsentAgreementCard"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_below="@id/R12"
+                    android:layout_centerHorizontal="true"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="15dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/txtConsentTitle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:textAlignment="center"
+                            android:text="@string/vaccination_consent_Q1m"
+                            android:textColor="@color/deepBlue"
+                            android:layout_margin="18dp"
+                            android:textStyle="bold"
+                            android:textSize="20sp" />
+
+                        <CheckBox android:id="@+id/checkbox_consent1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/consent_1"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginEnd="18dp"
+                            android:lineSpacingMultiplier="1.2"
+                            android:padding="2dp"
+                            android:onClick="onCheckboxClicked_1"/>
+
+                        <CheckBox android:id="@+id/checkbox_consent2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/consent_2"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginEnd="18dp"
+                            android:lineSpacingMultiplier="1.2"
+                            android:padding="2dp"
+                            android:onClick="onCheckboxClicked_2"/>
+
+                        <CheckBox android:id="@+id/checkbox_consent3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/consent_3"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="15dp"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginEnd="18dp"
+                            android:lineSpacingMultiplier="1.2"
+                            android:padding="2dp"
+                            android:onClick="onCheckboxClicked_3"/>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+                <Button
+                    android:id="@+id/button_update"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_below="@id/vaccineConsentAgreementCard"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/radius"
+                    android:elevation="50dp"
+                    android:onClick="Submit"
+                    android:shadowColor="@color/black"
+                    android:text="@string/submit"
+                    android:textColor="@color/White"
+                    android:textFontWeight="700"
+                    android:textSize="17sp"
+                    app:backgroundTint="@color/blue" />
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+    </FrameLayout>
+</ScrollView>
